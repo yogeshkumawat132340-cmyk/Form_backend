@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 
-// Ek field ka structure (Text, Email, Number, Dropdown, Checkbox, Radio)
 const FieldSchema = new mongoose.Schema(
   {
     label: {
@@ -22,7 +21,6 @@ const FieldSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
-    // Sirf dropdown / checkbox / radio ke liye use hoga
     options: {
       type: [String],
       default: [],
@@ -31,7 +29,6 @@ const FieldSchema = new mongoose.Schema(
   { _id: true }
 );
 
-// Poore form ka structure
 const FormSchema = new mongoose.Schema(
   {
     title: {

@@ -7,7 +7,6 @@ const ResponseSchema = new mongoose.Schema(
       ref: "Form",
       required: true,
     },
-    // answers: { "<fieldId>": "value", ... } -> flexible object
     answers: {
       type: mongoose.Schema.Types.Mixed,
       required: true,

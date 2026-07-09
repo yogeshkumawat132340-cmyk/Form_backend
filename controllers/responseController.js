@@ -1,7 +1,5 @@
 const Response = require("../models/Response");
 
-// @desc    Submit a response
-// @route   POST /api/responses
 const submitResponse = async (req, res) => {
   try {
     const { formId, answers } = req.body;

@@ -1,7 +1,5 @@
 const Form = require("../models/Form");
 
-// @desc    Create new form
-// @route   POST /api/forms
 const createForm = async (req, res) => {
   try {
     const { title, fields, style } = req.body;
@@ -60,8 +58,6 @@ const updateForm = async (req, res) => {
   }
 };
 
-// @desc    Delete form
-// @route   DELETE /api/forms/:id
 const deleteForm = async (req, res) => {
   try {
     const form = await Form.findByIdAndDelete(req.params.id);
